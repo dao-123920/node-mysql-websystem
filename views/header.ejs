@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="/">TodoApp</a>
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #7f7fff;">
+  <a class="navbar-brand text-white" href="/">TodoApp</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
           aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -8,14 +8,14 @@
     <ul class="navbar-nav">
       <% if(isAuth){ %>
         <li class="nav-item">
-          <a class="nav-link" href="/mypage">My page</a>
+          <a class="nav-link text-white" href="/mypage">My page</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/logout">Logout</a>
+          <a class="nav-link text-white" href="/logout">Logout</a>
         </li>
       <% }else{ %>
         <li class="nav-item">
-          <a class="nav-link" href="/signin">Sign in</a>
+          <a class="nav-link text-white" href="/signin">Sign in</a>
         </li>
       <% } %>
     </ul>
