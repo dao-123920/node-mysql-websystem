@@ -7,6 +7,7 @@ router.get('/', function (req, res, next) {
   res.render("signin", {
     title: "Sign in",
     isAuth: isAuth,
+    errorMessage: req.flash('error'),
   });
 });
 

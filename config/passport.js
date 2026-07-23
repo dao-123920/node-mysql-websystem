@@ -29,11 +29,11 @@ module.exports = function (app) {
         .select("*")
         .then(async function (results) {
           if (results.length === 0) {
-            return done(null, false, {message: "Invalid User"});
+            return done(null, false, {message: "ユーザー名またはパスワードが違います"});
           } else if (await bcrypt.compare(password, results[0].password)) {
             return done(null, results[0]);
           } else {
-            return done(null, false, {message: "Invalid User"});
+            return done(null, false, {message: "ユーザー名またはパスワードが違います"});
           }
         })
         .catch(function (err) {
